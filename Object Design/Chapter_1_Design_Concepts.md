@@ -66,3 +66,31 @@ Some objects are hard to stereotype because they fit into more than one category
 
 A Service Provider can look like an Interfacer depending on what context you're looking at it from. 
 It okay to emphasize more than one aspect. There are blends of stereotypes, just as there are blends of emphasis.
+
+## Roles, Responsibilities, and Collaborations
+
+An application is a system of responsibilities that are assigned to roles. Roles collaborate with eachother in order to 
+carry out its responsibilities. A good application is structured to effectively fulfill these responsibilities.
+
+We invent objects, assigning responsibilities to them for doing/holding things, and they work together to fulfill the 
+application's larger responsibilities.
+
+One object may need help from another object. Objects work together in concert in order to fulfill the application's
+responsibilities. We also must design these collaborations. 
+**Design is an iterative and incremental process of envisioning objects and their responsibilities and inventing flexible collaborations within small neighborhoods**
+
+**The services that an object holds and the info that an object provides define how it behaves alongside other objects**.
+**An object embodies a set of roles with a designated set of responsibilities**
+
+Objects collaborate by sending requests and receiving replies.
+
+An object can be more intelligent if it does something with what it knows. The more it knows, the less its client needs to
+know in order to use it.
+Blending stereotypes makes things easier to use. That way, clients can focus on their problem and not on the details.
+
+Collaborating objects must establish contracts with one another. The protocol to communicate, only use certain services,
+provide the appropriate info, use under certain conditions, handle the concequences, etc.
+
+The fewer demands an object makes, the easier it is to use them. If an object constantly needs the help of other objects, 
+it is hard to use. The more demands it can fulfill, the more useful it is. Though we must balance requirements and the 
+demands those requirements place on the object's neighbors.
